@@ -42,12 +42,12 @@ const SingleMovies = () => {
             <img src={movies.Poster} alt="movie poster" />
           </figure>
           <div className="card-content"> 
-            <p className="title"> {movies.Title}</p>
+             <p className="title"> {movies.Title}</p>
             <p className="card-text"> {movies.Released}</p>
             <p className="card-text"> {movies.Genre}</p>
             <p className="card-text"> {movies.imdbRating}</p>
             <p className="card-text"> {movies.Country}</p>
-            <NavLink to='/'> Go back</NavLink>
+            <NavLink to='/' className='back-btn'> Go back</NavLink>
              </div>
         </div> 
       </section>
