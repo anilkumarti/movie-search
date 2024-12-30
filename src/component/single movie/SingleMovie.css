@@ -1,0 +1,117 @@
+/* Movie Section */
+.movie-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: #f9fafb;
+    min-height: 100vh;
+  }
+  
+  /* Movie Card */
+  .movie-card {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* Movie Poster */
+  .movie-card figure {
+    margin: 0;
+    flex: 1;
+    max-width: 300px; /* Set a max width for the poster */
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Card Content */
+  .card-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .card-content .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content .card-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.8rem;
+  }
+  .back-btn {
+    padding: 1.2rem 3.6rem;
+    margin-bottom: 3rem;
+  }
+  
+  .card-content .card-text:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  /* Hover Effect */
+  .movie-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .movie-card {
+      flex-direction: column; /* Stack poster and text vertically */
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .movie-card figure {
+      max-width: 100%;
+    }
+  
+    .card-content {
+      padding: 1rem;
+    }
+  
+    .card-content .title {
+      font-size: 1.5rem;
+    }
+  
+    .card-content .card-text {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

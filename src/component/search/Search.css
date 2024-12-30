@@ -1,0 +1,76 @@
+/* Styling the search section */
+.search-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 12px; /* Added border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading styles */
+  .search-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Form and input styles */
+  .search-section form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-section input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Added border-radius */
+    transition: border-color 0.3s;
+  }
+  
+  .search-section input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Error message styles */
+  .card-error {
+    margin-top: 10px;
+     color: #d9534f; 
+    font-size: 0.9rem;
+    text-align: center;
+    display: inline-block;
+    /* background-color: #f8d7da; */
+    padding: 10px;
+    /* border: 1px solid #f5c6cb; */
+    border-radius: 8px; /* Added border-radius */
+    width: fit-content;
+  }
+  
+  .card-error p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .search-section {
+      padding: 15px;
+    }
+  
+    .search-section h2 {
+      font-size: 1.5rem;
+    }
+  
+    .search-section input[type="text"] {
+      width: 90%;
+    }
+  }
+  

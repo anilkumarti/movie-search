@@ -1,0 +1,29 @@
+/* Movie Section Wrapper */
+.movie-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Loading Text */
+  .loading {
+    font-size: 1.5rem;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    animation: fade 1.5s infinite; /* Add a fade animation for a smooth effect */
+  }
+  
+  /* Keyframes for fade animation */
+  @keyframes fade {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  } 
+  
